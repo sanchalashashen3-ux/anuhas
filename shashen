@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SANCHALA</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 1100px;
+    max-width: 92%;
+    margin: auto;
+}
+
+/* NAVBAR */
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00eaff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.welcome {
+    color: #00eaff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 1;
+}
+
+h1 span {
+    color: #00eaff;
+}
+
+.hero-text p {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #00eaff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 30px #00eaff;
+}
+
+/* PHONE */
+
+.phone-area {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    width: 250px;
+    height: 500px;
+    border: 5px solid #555;
+    border-radius: 40px;
+    padding: 10px;
+    background: #111;
+    box-shadow: 0 0 50px #00eaff55;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(160deg, #17475d, #02070b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.screen h2 {
+    color: #00eaff;
+    font-size: 30px;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 100px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.title span {
+    color: #00eaff;
+}
+
+/* ABOUT */
+
+.about {
+    background: #101010;
+    border: 1px solid #222;
+    border-radius: 25px;
+    padding: 50px;
+    text-align: center;
+}
+
+.about p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    background: #101010;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #00eaff;
+}
+
+.card h3 {
+    color: #00eaff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #999;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+    border-top: 1px solid #222;
+}
+
+footer span {
+    color: #00eaff;
+}
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 0;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .phone-area {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-left: 8px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+    <div class="logo">SANCHALA</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <div class="welcome">
+            WELCOME
+        </div>
+
+        <h1>
+            HI<br>
+            <span>SANCHALA!</span>
+        </h1>
+
+        <p>
+            Welcome to my personal website.
+            This website is made with HTML,
+            CSS and JavaScript.
+        </p>
+
+        <button onclick="hello()">
+            SAY HI 👋
+        </button>
+
+    </div>
+
+    <div class="phone-area">
+
+        <div class="phone">
+
+            <div class="screen">
+
+                <h2>
+                    HI<br>
+                    SANCHALA
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2 class="title">
+        ABOUT <span>ME</span>
+    </h2>
+
+    <div class="about">
+
+        <p>
+            Hello! 👋<br><br>
+            Welcome to my website.
+            I love technology, coding,
+            computers and creative projects.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="title">
+        MY <span>PROJECTS</span>
+    </h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>🐍 Python</h3>
+            <p>
+                Python games and
+                creative coding projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Web</h3>
+            <p>
+                Websites created using
+                HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎮 Games</h3>
+            <p>
+                Fun games and
+                interactive projects.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    Made by <span>Sanchala</span> ❤️
+</footer>
+
+</div>
+
+<script>
+function hello() {
+    alert("HI SANCHALA! 👋");
+}
+</script>
+
+</body>
+</html>
